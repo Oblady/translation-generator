@@ -3,7 +3,7 @@ require_once(__DIR__.'/../../autoload.php');
 
 use Symfony\Component\Yaml\Yaml;
 
-$config = Yaml::parse(file_get_contents("config.yml"));
+$config = Yaml::parse(file_get_contents("translator_config.yml"));
 $result=[];
 $open_tag = $config['open_tag'];
 $close_tag = $config['close_tag'];
