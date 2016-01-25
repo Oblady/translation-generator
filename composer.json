@@ -1,0 +1,14 @@
+{
+    "name": "oblady/translationGenerator",
+    "authors": [
+      {
+        "name": "Ph TERRAILLON",
+        "email": "philippe@oblady.fr",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+        "symfony/Yaml": "dev-master"
+    }
+
+}
