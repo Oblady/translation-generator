@@ -1,0 +1,21 @@
+#Indique le fichier de sortie. Si un argument est donnée au script php celui-ci sera pris en priorité
+output: test01.html.twig
+#Indique le nombre de boucle maximum effectuée. Permet d'éviter de mettre un serveur en boucle
+timeout: 100
+#Indique la balise d'ouverture ou se trouve le texte
+open_tag: '{{'
+#Indique la balise de fermeture
+close_tag: '}}'
+# filtre a trouver
+filter: translate
+#separateur du filter
+filter_separator: '|'
+#Liste des fichiers à analyser
+files:
+    ../../../../../app/views:
+        - step.1.takeview.html
+        - step.2.takeviewadjust.html
+        - step.3.scale.html
+        - step.4.screenchoice.html
+        - step.5.addopening.html
+        - step.6.getpdf.html
