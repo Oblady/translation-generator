@@ -8,7 +8,7 @@
       }
     ],
     "require": {
-        "symfony/Yaml": "dev-master"
+        "symfony/Yaml": "2.*"
     }
 
 }

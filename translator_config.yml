@@ -10,6 +10,8 @@ close_tag: '}}'
 filter: translate
 #separateur du filter
 filter_separator: '|'
+#Recherche du filtre dans du code js $filter
+filter_indicateur: "$filter"
 #Liste des fichiers à analyser
 files:
     ../../../../../app/views:

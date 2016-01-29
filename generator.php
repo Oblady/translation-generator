@@ -16,14 +16,14 @@ if (array_key_exists(1, $argv)) {
 else {
     $output = $config['output'];
 }
+
 $timeoutLimit = $config['timeout'];
 $filesToAnalyse = $config['files'];
 foreach ($filesToAnalyse as $path=>$fileNames) {
     //var_dump($path,$fileNames);
-    
     foreach ($fileNames as $fileName) {
     //Lecture du fichier
-        echo $fileName."\n";
+        //echo $fileName."\n";
         $firstTagPos = 0;
         $timeout=0;
         $fileToTranslate = file_get_contents($path.'/'.$fileName);
