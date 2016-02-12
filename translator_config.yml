@@ -1,5 +1,8 @@
 #Indique le fichier de sortie. Si un argument est donnée au script php celui-ci sera pris en priorité
 output: test01.html.twig
+#Indique le nom du tag généré  dans {% trans from "tag_trans" %}
+tag_trans: BriseVueConfig
+
 #Indique le nombre de boucle maximum effectuée. Permet d'éviter de mettre un serveur en boucle
 timeout: 100
 #Indique la balise d'ouverture ou se trouve le texte

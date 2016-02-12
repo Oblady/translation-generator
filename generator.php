@@ -9,6 +9,7 @@ $open_tag = $config['open_tag'];
 $close_tag = $config['close_tag'];
 $filter=$config['filter'];
 $filter_separator = $config['filter_separator'];
+$tag_trans = $config['tag_trans'];
 
 if (array_key_exists(1, $argv)) {
     $output = $argv[1];
@@ -53,7 +54,7 @@ foreach ($filesToAnalyse as $path=>$fileNames) {
                     }
                     if (!in_array($tmp2,$result )) {
                         
-                        $result[]='{% trans "briseVueConfig" %}'.$tmp2."{% endtrans %}"."{#".$comment."#}"."\n";
+                        $result[]='{% trans from "'.$tag_trans.'" %}'.$tmp2."{% endtrans %}"."{#".$comment."#}"."\n";
                     }
                 }
             }
