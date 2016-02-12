@@ -9,6 +9,7 @@ $open_tag = $config['open_tag'];
 $close_tag = $config['close_tag'];
 $filter=$config['filter'];
 $filter_separator = $config['filter_separator'];
+$filter_indicator = $config['filter_indicator'];
 $tag_trans = $config['tag_trans'];
 
 if (array_key_exists(1, $argv)) {
@@ -24,7 +25,7 @@ foreach ($filesToAnalyse as $path=>$fileNames) {
     //var_dump($path,$fileNames);
     foreach ($fileNames as $fileName) {
     //Lecture du fichier
-        //echo $fileName."\n";
+        echo $path.'=>'.$fileName."\n";
         $firstTagPos = 0;
         $timeout=0;
         $fileToTranslate = file_get_contents($path.'/'.$fileName);
